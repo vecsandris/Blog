@@ -32,7 +32,7 @@ app.get("/compose", function(req,res){
 });
 
 app.get("/levikehh", (req, res) => {
-  console.log("Levikehh was here")
+  console.log("Levikehh was here 2")
   res.status(200).json({hello: "world"})
 })
 
