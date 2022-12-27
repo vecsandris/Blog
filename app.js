@@ -31,6 +31,11 @@ app.get("/compose", function(req,res){
   res.render(__dirname + "/views/compose.ejs");
 });
 
+app.get("/levikehh", (req, res) => {
+  console.log("Levikehh was here")
+  res.status(200).json({hello: "world"})
+})
+
 app.get("/:topic", function(req,res){ 
   let requrestedTitle = lodash.lowerCase(req.params.topic);
   for(let i = 0; i < posts.length; i++){
